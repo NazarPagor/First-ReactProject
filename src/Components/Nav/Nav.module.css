@@ -1,0 +1,23 @@
+.nav{
+    grid-area: n;
+    background-color: chocolate;
+}
+.link{
+    text-decoration: none;
+    margin-top: 10px;
+    border: 1px dashed #000;
+    border-radius: 30px;
+    padding: 5px;
+    margin-left: -30px;
+    margin-right: 10px;
+    text-align: center;
+    list-style-type: none;
+    background-color: #a9a9a9;
+    color: white;
+}
+.link:hover{
+    background-color: burlywood;
+    border-radius: 10px;
+    transition: 0.1s;
+
+}

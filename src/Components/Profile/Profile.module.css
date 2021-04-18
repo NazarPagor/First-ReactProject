@@ -1,0 +1,11 @@
+.profile{
+    grid-area: c;
+    background-color: cornflowerblue;
+}
+.main_foto{
+    min-width: 100%;
+    max-height: 450px;
+}
+.link{
+    color: green;
+}
