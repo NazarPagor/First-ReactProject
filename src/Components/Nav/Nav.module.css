@@ -1,8 +1,9 @@
-.nav{
+.nav {
     grid-area: n;
     background-color: chocolate;
 }
-.link{
+
+.link {
     text-decoration: none;
     margin-top: 10px;
     border: 1px dashed #000;
@@ -15,9 +16,17 @@
     background-color: #a9a9a9;
     color: white;
 }
-.link:hover{
+.nav a{
+    text-decoration: none;
+}
+
+.link:hover {
     background-color: burlywood;
     border-radius: 10px;
     transition: 0.1s;
 
+}
+
+.activ {
+    color: gold;
 }
