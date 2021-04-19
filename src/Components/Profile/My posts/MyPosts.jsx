@@ -12,7 +12,7 @@ const MyPosts = () => {
                 <button>Pemove</button>
             </div>
             <div>
-                <Post meassage="Hi how are you?" like="15"/>
+                <Post meassage="Hi how are you?" like="17"/>
                 <Post meassage="It's my my first post" like="25"/>
             </div>
         </div>
