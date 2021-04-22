@@ -1,13 +1,12 @@
 .app-wrapper {
     display: grid;
     grid-template-rows: 60px  1fr;
-    grid-template-columns: 2fr 10fr;
-    grid-gap: 1px;
+    grid-template-columns: 1fr 10fr;
     grid-template-areas: "h h" "n c";
 }
 
 .app-wrapper-content {
     grid-area: c;
-    background-color: cornflowerblue;
+    background-color: #f0f2f7;
     padding: 10px;
 }

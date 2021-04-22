@@ -1,9 +1,27 @@
-.link{
-    color: green;
+.posts{
+    color: black;
     margin-top: 20px;
 }
-.link img{
+.posts img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+.descriptionPost{
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.fotoPost{
+    border: 1px solid #008CBA;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: silver;
+}
+.like{
+    padding: 2px;
+    display: flex;
+    border-bottom: 1px solid #2c3f58;
+    max-width: 60px;
+
 }

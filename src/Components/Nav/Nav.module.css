@@ -1,6 +1,7 @@
 .nav {
     grid-area: n;
-    background-color: chocolate;
+    background-color: #43536a;
+    max-width: 170px;
 }
 
 .link {
@@ -13,20 +14,24 @@
     margin-right: 10px;
     text-align: center;
     list-style-type: none;
-    background-color: #a9a9a9;
+    background-color: #43536a;
+    opacity: 0.8;
 }
 .nav a{
     text-decoration: none;
-    color: white;
+    color: silver;
+    opacity: 1;
 }
 
 .link:hover {
     background-color: burlywood;
     border-radius: 10px;
     transition: 0.1s;
+    background-color: #43537a;
+    opacity: 1;
 
 }
 
 .nav a.activeLink{
-    color: gold;
+    color: white;
 }
