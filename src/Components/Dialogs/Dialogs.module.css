@@ -1,17 +1,48 @@
 .dialogs{
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 1.5fr 8fr;
+    justify-items: center;
 }
 .dialogsItems {
+    align-items: center;
+    justify-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
     padding: 10px;
-}
-
-.dialogsItems .active{
-    color: gold;
+    margin-top: -1px;
+    min-width: 200px;
+    text-align: center;
 }
 .messages{
-    padding: 10px;
+    min-width:  800px;
+    max-width: 1200px;
 }
 .message{
-    color: white;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+}
+.dialog{
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid cornflowerblue;
+    border-radius: 15px;
+    background-color: rgba(100, 149, 237, 0.5);
+    transform: scale(1);
+}
+.dialog a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.dialog:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.dialogsItems a .active{
+    color: blue;
+    background-color: black;
 }

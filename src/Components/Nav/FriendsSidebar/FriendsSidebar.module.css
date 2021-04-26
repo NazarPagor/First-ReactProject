@@ -1,0 +1,17 @@
+.sidebar{
+    text-align: center;
+    color: #A9a9a9;
+}
+.frendFoto{
+    width: 30px;
+}
+.frendsName{
+    color: white;
+}
+.frends{
+    display: flex;
+}
+.frendPos{
+    font-size: 13px;
+    margin: 10px;
+}
