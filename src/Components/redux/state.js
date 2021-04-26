@@ -1,3 +1,5 @@
+import {rerenderTree} from "../../render";
+
 let state = {
     profilePage: {
         post: [{id: 1, message: "Hi how are you?", likeCounts: 10},
@@ -29,4 +31,15 @@ let state = {
             {id: 3, fname: "Slava"},],
     },
 }
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likeCounts: 0,
+    }
+    state.profilePage.post.push(newPost);
+    rerenderTree(state);
+}
+
 export default state;
