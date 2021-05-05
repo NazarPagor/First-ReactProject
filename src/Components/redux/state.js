@@ -1,10 +1,10 @@
 import {rerenderTree} from "../../render";
-
 let state = {
     profilePage: {
         post: [{id: 1, message: "Hi how are you?", likeCounts: 10},
             {id: 2, message: "It's my my first post", likeCounts: 12},
             {id: 2, message: "learning", likeCounts: 11},],
+        newPostText: 'new text',
     },
     meassagesPage: {
         meassages: [
@@ -32,14 +32,24 @@ let state = {
     },
 }
 
-export let addPost = (postMessage) => {
+export let newPostMesage = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderTree(state);
+}
+
+
+export let addPost = () => {
     let newPost = {
         id: 5,
-        message: postMessage,
+        message: state.profilePage.newPostText,
         likeCounts: 0,
     }
     state.profilePage.post.push(newPost);
+    state.profilePage.newPostText = '';
     rerenderTree(state);
 }
+
+
+window.state = state;
 
 export default state;

@@ -1,8 +1,8 @@
 import React from 'react';
+import state, {newPostMesage} from "./Components/redux/state";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {rerenderTree} from "./render"
-import state from "./Components/redux/state";
+import {rerenderTree} from "./render";
 
 rerenderTree(state);
 // If you want to start measuring performance in your app, pass a function
