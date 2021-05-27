@@ -3,18 +3,20 @@
     background-color: #43536a;
     max-width: 170px;
 }
-
+.titleLink{
+    display: flex;
+}
+.text{
+    margin-top: -4px;
+    margin-left: 3px;
+}
 .link {
     text-decoration: none;
     margin-top: 10px;
-    border: 1px dashed #000;
-    border-radius: 30px;
     padding: 5px;
-    margin-left: -30px;
-    margin-right: 10px;
+    margin-left: -20px;
     text-align: center;
     list-style-type: none;
-    background-color: #43536a;
     opacity: 0.8;
 }
 .nav a{
@@ -24,14 +26,13 @@
 }
 
 .link:hover {
-    background-color: burlywood;
-    border-radius: 10px;
+    transform: scale(1.1);
     transition: 0.1s;
-    background-color: #43537a;
-    opacity: 1;
-
 }
 
 .nav a.activeLink{
     color: white;
+}
+.Hr{
+    max-width: 90%;
 }

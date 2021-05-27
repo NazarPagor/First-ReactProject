@@ -1,0 +1,26 @@
+.BlockNews {
+    background: linear-gradient(to top left, #C0C0C0, #000000);
+    min-height: 300px;
+    background-size: 400% 400%;
+    max-width: 100%;
+    margin: 5px;
+    animation: gradient 3s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.AllNews {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 3fr 3fr 3fr;
+    justify-content: center;
+}

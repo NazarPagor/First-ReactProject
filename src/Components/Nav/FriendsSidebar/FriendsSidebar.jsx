@@ -2,8 +2,6 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import s from "./FriendsSidebar.module.css";
 
-
-
 const FriendsSidebar = (props) => {
     let path = "/friends/" + props.id
     return (

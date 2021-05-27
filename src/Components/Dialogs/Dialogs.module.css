@@ -1,22 +1,23 @@
 .dialogs{
+    padding: 10px;
     display: grid;
     grid-template-columns: 1.5fr 8fr;
     justify-items: center;
+    min-height: 100%;
 }
 .dialogsItems {
     align-items: center;
     justify-items: center;
-    border: 1px solid black;
     border-radius: 5px;
     margin: 5px;
     padding: 10px;
     margin-top: -1px;
     min-width: 200px;
     text-align: center;
+    min-height: 900px;
 }
 .messages{
-    min-width:  800px;
-    max-width: 1200px;
+    min-width:  900px;
 }
 .message{
     margin-bottom: 10px;
@@ -64,6 +65,11 @@
     display: flex;
 }
 .textArea{
-    width: 100%;
-
+    min-width: 86%;
+    min-height: 70px;
+    outline : none;
+    resize : none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
 }

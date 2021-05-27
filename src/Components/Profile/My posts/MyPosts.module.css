@@ -1,27 +1,49 @@
 .postsBlock{
     padding: 10px;
+    margin-left: 6%;
+
 }
 .posts{
     margin-top: 10px;
     color: black;
 }
 
-.button {
-    background-color: white;
-    border: none;
-    color: black;
-    border: 2px solid #008CBA;
-    padding: 5px 25px;
-    text-align: center;
+.inputText{
+    min-width: 90%;
+    min-height: 70px;
+    outline : none;
+    resize : none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+
+}
+
+.buttonBlock{
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.button  {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 10px;
-}.button:hover {
-     background-color: #008CBA;
-     color: white;
- }
+    text-align: center;
+    width: 140px;
+    height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.button:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+}
