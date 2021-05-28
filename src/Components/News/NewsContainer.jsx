@@ -1,23 +1,14 @@
 import React from "react";
-import s_news from "./News.module.css";
-import SomeNews from "./SomeNews";
-import StoreContext from "../redux/StoreContext";
 import News from "./News";
+import {connect} from "react-redux";
 
-const NewsContainer = (props) => {
-    return (
-        <StoreContext.Consumer>{
-            (store) => {
-                let state = store.getState().newsPage;
-                let someNews = state.someNews.map((n) => (<SomeNews news={n.news}/>))
-                return (
-                    <div>
-                        <News SomeNews = {someNews}/>
-                    </div>
-                )
-            }
-        }
-        </StoreContext.Consumer>
-    )
+
+const mapStateToProps = (state) =>{
+    return{
+        newsPage: state.newsPage
+    }
 }
+
+const NewsContainer = connect(mapStateToProps)(News)
+
 export default NewsContainer;

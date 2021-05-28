@@ -2,7 +2,6 @@ import React from "react";
 import './App.css';
 import Header from "./Components/Header/Header";
 import Profile from "./Components/Profile/Profile";
-import {BrowserRouter} from "react-router-dom";
 import {Route} from "react-router";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 import NavContainer from "./Components/Nav/NavContainer";
@@ -11,7 +10,6 @@ import MusicContainer from "./Components/Music/MusicContainer";
 
 const App = (props) => {
     return (
-        <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
                 <NavContainer/>
@@ -26,7 +24,6 @@ const App = (props) => {
                         <MusicContainer />}/>
                 </div>
             </div>
-        </BrowserRouter>
     )
 }
 

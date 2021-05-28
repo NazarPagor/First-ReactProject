@@ -1,3 +1,4 @@
+
 let initialState ={
         frendsName: [
             {id: 1, fname: "Sveta"},

@@ -1,27 +1,27 @@
 import React from 'react';
-import store from "./Components/redux/redux-store";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
 import App from './App';
-import StoreContext from "./Components/redux/StoreContext";
-export let rerenderTree = (state) => {
+import {Provider} from "react-redux";
+import {BrowserRouter} from "react-router-dom";
+import store from "./Components/redux/redux-store";
 
+export let rerenderTree = () => {
+    debugger;
     ReactDOM.render(
-        <React.StrictMode>
-            <StoreContext.Provider value={store}>
-            <App />
-            </StoreContext.Provider>
-        </React.StrictMode>,
-        document.getElementById('root')
+        <BrowserRouter>
+            <Provider store={store}>
+                <App/>
+            </Provider>
+        </BrowserRouter>, document.getElementById('root')
     );
 }
 
-rerenderTree(store.getState());
+rerenderTree();
 
-store.subscribe( () => {
-    let state = store.getState();
-    rerenderTree(state);
+store.subscribe(() => {
+    rerenderTree();
 });
 
 

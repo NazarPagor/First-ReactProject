@@ -1,21 +1,13 @@
 import React from "react";
-import FriendsSidebar from "./FriendsSidebar/FriendsSidebar";
 import Nav from "./Nav";
-import StoreContext from "../redux/StoreContext";
+import {connect} from "react-redux";
 
-
-const NavContainer = (props) => {
-    return (
-        <StoreContext.Consumer>{
-            (store) =>{
-                let state = store.getState().sidebarPage;
-                let Frends = state.frendsName.map((f) => (<FriendsSidebar name={f.fname} id={f.id}/>));
-                return (
-                    <Nav Frends={Frends}/>
-                )
-            }
-        }
-        </StoreContext.Consumer>
-    );
+const mapStateToProps = (state) =>{
+    return {
+        sidebarPage: state.sidebarPage
+    }
 }
+
+const NavContainer = connect(mapStateToProps)(Nav)
+
 export default NavContainer;
