@@ -28,10 +28,10 @@ import {connect} from "react-redux";
         </StoreContext.Consumer>
     )
 }*/
-debugger;
+
 const mapStateToProps = (state) =>{
     return{
-        dialogsPage: state.dialogsPage
+        dialogsPage: state.dialogsPage,
     }
 }
 

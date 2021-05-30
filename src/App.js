@@ -7,23 +7,26 @@ import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 import NavContainer from "./Components/Nav/NavContainer";
 import NewsContainer from "./Components/News/NewsContainer";
 import MusicContainer from "./Components/Music/MusicContainer";
+import UsersContainer from "./Components/Users/UsersContainer";
 
 const App = (props) => {
     return (
-            <div className="app-wrapper">
-                <Header/>
-                <NavContainer/>
-                <div className="app-wrapper-content">
-                    <Route path="/profile" render={() =>
-                        <Profile />}/>
-                    <Route path="/message" render={() =>
-                        <DialogsContainer />}/>
-                    <Route path="/news" render={() =>
-                        <NewsContainer /> }/>
-                    <Route path="/music" render={() =>
-                        <MusicContainer />}/>
-                </div>
+        <div className="app-wrapper">
+            <Header/>
+            <NavContainer/>
+            <div className="app-wrapper-content">
+                <Route path="/profile" render={() =>
+                    <Profile/>}/>
+                <Route path="/message" render={() =>
+                    <DialogsContainer/>}/>
+                <Route path="/news" render={() =>
+                    <NewsContainer/>}/>
+                <Route path="/music" render={() =>
+                    <MusicContainer/>}/>
+                <Route path="/users" render={() =>
+                    <UsersContainer/>}/>
             </div>
+        </div>
     )
 }
 

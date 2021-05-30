@@ -3,7 +3,7 @@ import s_news from "./News.module.css";
 import SomeNews from "./SomeNews";
 const News = (props) => {
     let state = props.newsPage;
-    let newNews = state.someNews.map((n) => (<SomeNews news={n.news}/>))
+    let newNews = state.someNews.map((n) => (<SomeNews news={n.news} key = {n.id}/>))
     return (
         <div>
             <h1 align="center">News</h1>
